@@ -24,7 +24,7 @@
         android:layout_below="@+id/cameraPreview"
         android:layout_marginTop="200dp"
         android:gravity="center_horizontal"
-        android:text="@string/Запрос"
+        android:text="Запрос"
 
 
         android:visibility="visible" />
@@ -37,19 +37,12 @@
         android:layout_marginTop="23dp"
         android:gravity="center_horizontal"
         android:text="Сфокусируйте камеру на QR-коде"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cameraPreview"
-        android:layout_marginTop="100dp"
-        android:gravity="center_horizontal"
-        android:text="TextView"
         android:textSize="20sp" /><![CDATA[
 
+
+
     />
+
 
 ]]>
 </RelativeLayout>

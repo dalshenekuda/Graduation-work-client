@@ -139,7 +139,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                                     String s1 = (qrcodes.valueAt(0).displayValue);
-                                    sendRequest.execute("http://192.168.0.182:8080/check", "check", s1);
+                                    sendRequest.execute("http://192.168.8.107:8080/check", "check", s1);
+                                    //sendRequest.execute("http://192.168.0.182:8080/check", "check", s1);
                                 }
 
                             });
@@ -149,22 +150,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        /*
-        public void pressButton(parseArray<Barcode> qrcodes){
-            Button button2 = (Button) findViewById(R.id.button);
-            button2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    SendRequest sendRequest = new SendRequest();
-                    //  String s = "444444";
-                    String s = qrcodes.valueAt(0);
-                    txtResult.setText(qrcodes.valueAt(0).displayValue);
-                    sendRequest.execute("http://192.168.0.182:8080/check", "check", "44444");
-                }
 
-            });
-        }
-        */
 
 
 
@@ -205,7 +191,6 @@ public class MainActivity extends AppCompatActivity {
                 reader.close();
                 responseFromServer = response.toString();
 
-
             }
             catch (Exception ex) {
                 return ex.getMessage();
@@ -213,9 +198,6 @@ public class MainActivity extends AppCompatActivity {
 
             return responseFromServer;
         }
-
-
-
 
 
 
